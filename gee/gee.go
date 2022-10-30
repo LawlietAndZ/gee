@@ -29,12 +29,12 @@ func (engine *Engine) addRoute(method string, pattern string, handler HandlerFun
 }
 
 //用户调用GET、POST方法时，会将url和handler注册到映射表当中。
-// GET 请求
+// GET  请求
 func (engine *Engine) GET(pattern string, handler HandlerFunc) {
 	engine.addRoute("GET", pattern, handler)
 }
 
-// POST 请求
+// POST  请求
 func (engine *Engine) POST(pattern string, handler HandlerFunc) {
 	engine.addRoute("POST", pattern, handler)
 }
